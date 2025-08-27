@@ -1,0 +1,99 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Hero ocupa toda la pantalla */
+.hero-section {
+    background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-b978-61f6-aeef-cc3e2d305f4d/raw?se=2025-08-27T21%3A54%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=9aaec5eb-bea6-5e12-88ba-1aba31a1e689&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-27T20%3A19%3A17Z&ske=2025-08-28T20%3A19%3A17Z&sks=b&skv=2024-08-04&sig=MFnT0FFZg3%2B%2BmZyI1KvfvP/Aepzh9xVljUMQedPjq70%3D') center/cover no-repeat;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.service-card { transition: transform 0.3s ease; }
+.service-card:hover { transform: translateY(-5px); }
+
+.whatsapp-btn {
+    position: fixed; bottom: 20px; right: 20px; z-index: 999;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+.mobile-menu { transform: translateY(-100%); transition: transform 0.3s ease-in-out; }
+.mobile-menu.active { transform: translateY(0); }
+
+.service-image { height: 200px; object-fit: cover; }
+
+.schedule-table tr:nth-child(even) { background-color: #f3f4f6; }
+
+nav a.active { color: #60a5fa; }
+
+/* --- Navbar responsive --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00ffcc;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+    border-radius: 0 0 0 10px;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}

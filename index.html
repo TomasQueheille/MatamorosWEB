@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Casa Matamoros | Taller Mecánico en Bahía Blanca</title>
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="fixed w-full bg-gray-900 text-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-2xl text-blue-400">Casa Matamoros</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#historia" class="hover:text-blue-400 font-medium">Historia</a>
+                <a href="#servicios" class="hover:text-blue-400 font-medium">Servicios</a>
+                <a href="#ubicacion" class="hover:text-blue-400 font-medium">Dirección</a>
+                <a href="#horario" class="hover:text-blue-400 font-medium">Horario</a>
+                <a href="#contacto" class="hover:text-blue-400 font-medium">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu bg-gray-900 text-white md:hidden">
+            <div class="flex flex-col p-4 space-y-4">
+                <a href="#historia"  class="hover:text-blue-400 font-medium">Historia</a>
+                <a href="#servicios" class="hover:text-blue-400 font-medium">Servicios</a>
+                <a href="#ubicacion"  class="hover:text-blue-400 font-medium">Dirección</a>
+                <a href="#horario"    class="hover:text-blue-400 font-medium">Horario</a>
+                <a href="#contacto"   class="hover:text-blue-400 font-medium">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section flex items-center justify-center">
+        <div class="text-center text-white" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Casa Matamoros</h1>
+            <p class="text-xl md:text-2xl">Especialistas en escapes, tanques de combustible y radiadores</p>
+            <a href="#servicios" class="mt-8 inline-block bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                Nuestros Servicios
+            </a>
+        </div>
+    </section>
+    
+    <section id="historia" class="py-16 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold mb-6">Nuestra Historia</h2>
+            <p class="text-lg leading-relaxed text-gray-300">
+                Fundada hace más de 40 años en Bahía Blanca, <span class="text-blue-400 font-semibold">Casa Matamoros</span>
+                se convirtió en un referente de confianza en el rubro automotor.
+                Comenzamos como un pequeño taller de reparación de escapes y, con el paso de los años,
+                fuimos ampliando nuestros servicios a tanques de combustible y radiadores.
+                Hoy seguimos manteniendo los mismos valores: <span class="font-semibold">calidad, compromiso y atención personalizada</span>.
+            </p>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Nos especializamos en soluciones duraderas para tu vehículo.
+                En <span class="font-semibold text-blue-700">Casa Matamoros</span> trabajamos con repuestos de calidad y técnicas actualizadas,
+                brindando la tranquilidad de que tu auto está en manos expertas.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="https://www.wurth.com.ar/blog/wp-content/uploads/2024/03/cano-de-escape-2.jpg" alt="Sistemas de escape de alto rendimiento" class="service-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Escapes</h3>
+                        <p class="text-gray-600">Reparación, mantenimiento e instalación de sistemas de escape para todo tipo de vehículos.</p>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_775393-MLM86233129533_062025-O.webp" alt="Inspección y reparación de tanques de combustible de autos" class="service-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Tanques</h3>
+                        <p class="text-gray-600">Reparación de fugas, abolladuras y reemplazo de tanques de combustible, garantizando seguridad y durabilidad.</p>
+                    </div>
+                </div>
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-duration="1400">
+                    <img src="https://st5.depositphotos.com/41556114/66221/v/600/depositphotos_662213486-stock-video-new-aluminum-radiator-cooling-antifreeze.jpg" alt="Mantenimiento y limpieza de radiador de motor de auto" class="service-image w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Radiadores</h3>
+                        <p class="text-gray-600">Limpieza, reparación y reemplazo de radiadores para evitar sobrecalentamientos y prolongar la vida útil del motor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold text-center mb-12">Dónde Encontrarnos</h2>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-96">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.844788320144!2d-62.27415842340248!3d-38.71804797176435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9592e3998f45c99f%3A0xc392131238914616!2sBrandsen%20735%2C%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1724623190209!5m2!1ses-419!2sar"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Dirección</h3>
+                    <p class="text-gray-600">Brandsen 735, Bahía Blanca, Buenos Aires, CP 8000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="horario" class="py-16 bg-white">
+        <div class="max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold text-center mb-12">Horario de Atención</h2>
+            <table class="w-full schedule-table bg-white rounded-lg shadow-lg overflow-hidden">
+                <thead class="bg-blue-700 text-white">
+                    <tr>
+                        <th class="py-3 px-6 text-left">Día</th>
+                        <th class="py-3 px-6 text-left">Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="py-3 px-6 border-b">Lunes</td><td class="py-3 px-6 border-b">8:00–18:00</td></tr>
+                    <tr><td class="py-3 px-6 border-b">Martes</td><td class="py-3 px-6 border-b">8:00–18:00</td></tr>
+                    <tr><td class="py-3 px-6 border-b">Miércoles</td><td class="py-3 px-6 border-b">8:00–18:00</td></tr>
+                    <tr><td class="py-3 px-6 border-b">Jueves</td><td class="py-3 px-6 border-b">8:00–18:00</td></tr>
+                    <tr><td class="py-3 px-6 border-b">Viernes</td><td class="py-3 px-6 border-b">8:00–18:00</td></tr>
+                    <tr><td class="py-3 px-6 border-b">Sábado</td><td class="py-3 px-6 border-b">Cerrado</td></tr>
+                    <tr><td class="py-3 px-6">Domingo</td><td class="py-3 px-6">Cerrado</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-3xl font-bold mb-6">Contáctanos</h2>
+            <p class="text-lg mb-8">¿Tenes alguna duda o necesitas agendar un servicio? ¡Escríbenos por WhatsApp ahora!</p>
+            <a href="https://wa.me/542915011705" target="_blank"
+                class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg inline-flex items-center text-xl transition">
+                <i class="fab fa-whatsapp text-2xl mr-3"></i> Chatea con nosotros
+            </a>
+            <div class="mt-10">
+                <h3 class="text-xl font-semibold mb-2">Teléfono</h3>
+                <p class="text-gray-600"><i class="fas fa-phone mr-2"></i>(+54) 9 291 501-1705</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/542915011705" target="_blank"
+        class="whatsapp-btn bg-green-500 hover:bg-green-600 w-16 h-16 flex items-center justify-center rounded-full text-white shadow-lg">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h3 class="text-xl font-bold">Casa Matamoros</h3>
+                <p class="text-gray-400">La casa de escapes, tanques de combustible y radiadores del país</p>
+            </div>
+            <p class="mt-6 md:mt-0 text-gray-400">© 2025 Casa Matamoros. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
