@@ -7,7 +7,7 @@ body {
 .hero-section {
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-        url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-b978-61f6-aeef-cc3e2d305f4d/raw?se=2025-08-27T21%3A54%3A26Z&sp=r&sv=2024-08-04&sr=b&scid=9aaec5eb-bea6-5e12-88ba-1aba31a1e689&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-27T20%3A19%3A17Z&ske=2025-08-28T20%3A19%3A17Z&sks=b&skv=2024-08-04&sig=MFnT0FFZg3%2B%2BmZyI1KvfvP/Aepzh9xVljUMQedPjq70%3D') center/cover no-repeat;
+        url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-6968-61f6-aaad-aead75f8df4f/raw?se=2025-08-28T22%3A27%3A24Z&sp=r&sv=2024-08-04&sr=b&scid=8d707277-0305-5bc0-9931-c4d31cc4b396&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-28T20%3A33%3A06Z&ske=2025-08-29T20%3A33%3A06Z&sks=b&skv=2024-08-04&sig=ie098cpq4%2B8hToqv89IBrdD2l%2BZ/I8u%2BVwDFUcUUl4E%3D') center/cover no-repeat;
     height: 100vh;
     padding-top: 70px;
 }
