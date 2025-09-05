@@ -7,7 +7,7 @@ body {
 .hero-section {
     background:
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-        url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-6968-61f6-aaad-aead75f8df4f/raw?se=2025-08-28T22%3A27%3A24Z&sp=r&sv=2024-08-04&sr=b&scid=8d707277-0305-5bc0-9931-c4d31cc4b396&skoid=a3412ad4-1a13-47ce-91a5-c07730964f35&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-28T20%3A33%3A06Z&ske=2025-08-29T20%3A33%3A06Z&sks=b&skv=2024-08-04&sig=ie098cpq4%2B8hToqv89IBrdD2l%2BZ/I8u%2BVwDFUcUUl4E%3D') center/cover no-repeat;
+        url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-b978-61f6-aeef-cc3e2d305f4d/raw?se=2025-09-05T20%3A23%3A45Z&sp=r&sv=2024-08-04&sr=b&scid=6985a88e-b560-594f-945b-5f7023f416c6&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-05T17%3A43%3A41Z&ske=2025-09-06T17%3A43%3A41Z&sks=b&skv=2024-08-04&sig=fs7NiIdwKQ7g001DpcJ9lw9fFvLHlv95W/HMEyjCuMQ%3D') center/cover no-repeat;
     height: 100vh;
     padding-top: 70px;
 }
@@ -97,3 +97,62 @@ nav a.active { color: #60a5fa; }
     display: flex;
   }
 }
+
+@media (max-width: 640px) {
+  .hero-section {
+    height: 70vh; /* Reduce altura en celulares */
+    padding-top: 50px; /* Ajusta si header fijo tapa contenido */
+  }
+  .hero-section h1 {
+    font-size: 2rem; /* Texto más pequeño */
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .hero-section a {
+    padding: 0.5rem 1rem; /* Botón más compacto */
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .whatsapp-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .whatsapp-btn i {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://sdmntpreastus2.oaiusercontent.com/files/00000000-b978-61f6-aeef-cc3e2d305f4d/raw?se=2025-09-05T20%3A23%3A45Z&sp=r&sv=2024-08-04&sr=b&scid=6985a88e-b560-594f-945b-5f7023f416c6&skoid=864daabb-d06a-46b3-a747-d35075313a83&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-09-05T17%3A43%3A41Z&ske=2025-09-06T17%3A43%3A41Z&sks=b&skv=2024-08-04&sig=fs7NiIdwKQ7g001DpcJ9lw9fFvLHlv95W/HMEyjCuMQ%3D') center top/cover no-repeat;
+}
+
+
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav ul li a {
+  transition: color 0.3s ease;
+}
+
+/* En móvil, que el menú sea columna */
+@media (max-width: 768px) {
+  #menu {
+    flex-direction: column;
+    background-color: #1f2937; /* gris oscuro */
+    padding: 1rem;
+  }
+  #menu li {
+    margin-bottom: 1rem;
+  }
+}
+
